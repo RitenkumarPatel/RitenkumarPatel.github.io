@@ -326,4 +326,18 @@ nav .right a span {
   .contact-section {
     padding: 0 20px;
   }
+  /* For square images */
+  .cells img, 
+  .person-details img {
+    width: 150px; /* Adjust this to the desired square size */
+    height: 150px;
+    object-fit: cover; /* Ensures the image fills the square dimensions */
+  }
+  
+  /* For the wider ISIC image */
+  .wide-image {
+    width: 300px; /* Wider size for the ISIC logo */
+    height: auto; /* Keeps the aspect ratio intact */
+  }
+
 }
