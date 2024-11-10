@@ -334,10 +334,24 @@ nav .right a span {
     object-fit: cover; /* Ensures the image fills the square dimensions */
   }
   
-  /* For the wider ISIC image */
-  .wide-image {
-    width: 300px; /* Wider size for the ISIC logo */
-    height: auto; /* Keeps the aspect ratio intact */
+  .wide-image{
+    width: 150px;
+    height: 10px;
   }
+
+  .testimony-section .group {
+    overflow: hidden; /* Clears the float and ensures the container wraps around the floated image */
+  }
+  .video-preview {
+    display: flex;             /* Use Flexbox for centering */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically (if necessary) */
+    margin-top: 20px;          /* Adds space above the video */
+  }
+  
+  .video-preview iframe {
+    border-radius: 8px;        /* Optional: rounds the corners of the video */
+  }
+  
 
 }
